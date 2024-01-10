@@ -1,5 +1,6 @@
 # Incident Response Documentation on Findings
-![Sentinal Findings](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/d2fa887b-1f8a-4f62-b80e-de8b0762ecd5)
+<p align="center">
+<img src="https://i.imgur.com/PlfjJKH.png" height="80%" width="80%" alt="9"/><br />
 
 ## Introduction
 Throughout the Azure HoneyNet simulation, I assumed the role of Cyber Incident Responder within my Security Operations Center (SOC), conscientiously examining and addressing four security incidents. This document serves as a recapitulation of my educational journey, illustrating the success of the incident response protocols I implemented to counteract potential threats.
@@ -15,8 +16,10 @@ The document comprises overviews, evaluations of consequences, responsive measur
 
 ## Incident ID: 29 - Brute Force ATTEMPT - Windows
 
-![Brute Force](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/1578131e-bf43-4595-85bb-b8d1b9f1c2a6)
-![Brute Force](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/23bd10e0-6a1a-4298-aabf-1934b44a113c)
+<p align="center">
+<img src="https://imgur.com/umCFfK8.png" height="80%" width="80%" alt="9"/><br />
+  <p align="center">
+<img src="https://imgur.com/WqIQn0e.png" height="30%" width="30%" alt="9"/><br />
 
 **Incident Summary**
 
@@ -47,7 +50,8 @@ The occurrence has been categorized as a verified security breach because of the
 
 
 ## Incident ID: 10 - Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update) 
-![Privilege Escalation](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/4f3f773c-57b2-4fa2-8037-8dd07df44f6b)
+<p align="center">
+<img src="https://imgur.com/74NTNSs.png" height="70%" width="70%" alt="9"/><br />
 
 **Incident Summary**
 
@@ -69,6 +73,8 @@ Given that this was a simulated scenario intended for testing and educational pu
 This incident is classified as a potential privilege escalation incident according to the NIST 800-61 framework. The severity of the incident will depend on the level of access obtained by the user and the sensitivity of the information accessed.
 
 ## Incident ID: 82 - Brute Force ATTEMPT - Linux Syslog
+<p align="center">
+<img src="https://imgur.com/9jD6v1h.png" height="70%" width="70%" alt="9"/><br />
 
 **Incident Summary**
 
