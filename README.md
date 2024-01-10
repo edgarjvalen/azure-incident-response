@@ -1,4 +1,5 @@
-# Incident Response Documentation on Findings
+# Incident Response Documentation on Findings: Security Analyst
+
 <p align="center">
 <img src="https://i.imgur.com/PlfjJKH.png" height="80%" width="80%" alt="9"/><br />
 
