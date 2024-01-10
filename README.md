@@ -2,30 +2,29 @@
 ![Sentinal Findings](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/d2fa887b-1f8a-4f62-b80e-de8b0762ecd5)
 
 ## Introduction
-During the Azure HoneyNet simulation, I acted as the Cyber Incident Responder in my SOC, diligently investigating and responding to four security incidents. This report is a reflection of my learning experience and demonstrates the effectiveness of the incident response procedures I employed to mitigate potential threats.
+Throughout the Azure HoneyNet simulation, I assumed the role of Cyber Incident Responder within my Security Operations Center (SOC), conscientiously examining and addressing four security incidents. This document serves as a recapitulation of my educational journey, illustrating the success of the incident response protocols I implemented to counteract potential threats.
 
 ## Scope
-The document includes summaries, impact assessments, response actions, and classifications (where applicable) for the following incidents:
-
-* Incident ID: 125 - Brute Force ATTEMPT - Windows
-* Incident ID: 9 - Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update)
-* Incident ID: 101 - Brute Force ATTEMPT - Linux Syslog
-* Incident ID: 6 - Malware Detected
-
+The document comprises overviews, evaluations of consequences, responsive measures, and categorizations (if relevant) for the incidents listed below:
+- Incident ID: 29 - Brute Force ATTEMPT - Windows
+- Incident ID: 10 - Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update)
+- Incident ID: 82 - Brute Force ATTEMPT - Linux Syslog
+- Incident ID: 9 - Malware Detected
 
 
-## Incident ID: 125 - Brute Force ATTEMPT - Windows
+
+## Incident ID: 29 - Brute Force ATTEMPT - Windows
 
 ![Brute Force](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/1578131e-bf43-4595-85bb-b8d1b9f1c2a6)
 ![Brute Force](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/23bd10e0-6a1a-4298-aabf-1934b44a113c)
 
 **Incident Summary**
 
-On May 13, 2023, at 20:36:48 UTC, Azure Sentinel detected a brute force attack attempt on a Windows system named "windows-vm". The attacker, identified as IP address 125.166.23.61, made over 700 login attempts with no success. The incident suggests a deliberate attempt to gain unauthorized access and elevate privileges on the targeted system.
+On January 6, 2024, at 11:25:48 UTC, Azure Sentinel detected a brute force attack attempt on a Windows system named "windows-vm01". The attacker, identified as IP address 14.192.144.254, made around 15,000 login attempts with no success. The incident suggests a deliberate attempt to gain unauthorized access and elevate privileges on the targeted system.
 
 **Impact Assessment**
 
-The incident has been classified as a confirmed security breach due to the large number of brute force login attempts and multiple alerts triggered.
+The occurrence has been categorized as a verified security breach because of the substantial volume of brute force login attempts and the activation of multiple alerts.
 
 **Initial Response Actions**
 
@@ -47,16 +46,16 @@ The incident has been classified as a confirmed security breach due to the large
 6. Monitor the system for any further unusual activity to ensure it remains secure.
 
 
-## Incident ID: 9 Custom - Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update) 
+## Incident ID: 10 - Possible Privilege Escalation (Azure Key Vault Critical Credential Retrieval or Update) 
 ![Privilege Escalation](https://github.com/asuleman-cyber/Security-Incident-Response/assets/43348989/4f3f773c-57b2-4fa2-8037-8dd07df44f6b)
 
 **Incident Summary**
 
-On May 13, 2023, at 17:22:15 UTC, Azure Sentinel detected a potential privilege escalation incident related to Azure Key Vault credential retrieval or update. User "Adam Suleman" was involved in multiple instances of accessing critical credentials and was also connected to other incidents involving excessive password resets and global admin role assignments.
+On January 5, 2024 at 23:13:41 UTC, Azure Sentinel identified a potential privilege escalation incident linked to the retrieval or modification of Azure Key Vault credentials. "Josh Smith" was implicated in numerous occurrences of accessing crucial credentials and was additionally linked to other incidents, including an unusually high number of password resets and assignments to global admin roles.
 
 **Impact Assessment**
 
-As this was a simulated scenario for testing and educational purposes, no actual impact occurred. However, the incident raises concerns about potential privilege escalation and unauthorized access to sensitive information.
+Given that this was a simulated scenario intended for testing and educational purposes, no real impact took place. Nevertheless, the incident raises apprehensions regarding potential privilege escalation and unauthorized access to sensitive information.
 
 **Recommendations**
 
@@ -69,11 +68,11 @@ As this was a simulated scenario for testing and educational purposes, no actual
 
 This incident is classified as a potential privilege escalation incident according to the NIST 800-61 framework. The severity of the incident will depend on the level of access obtained by the user and the sensitivity of the information accessed.
 
-## Incident ID: 101 - Brute Force ATTEMPT - Linux Syslog
+## Incident ID: 82 - Brute Force ATTEMPT - Linux Syslog
 
 **Incident Summary**
 
-On May 15, 2023, at 17:55:12 UTC, Azure Sentinel detected a brute force attack attempt on a Linux system with IP address 114.132.168.163. This IP address has been involved in several incidents, triggering multiple alerts.
+On January 6, 2023, at 20:55:35 UTC, Azure Sentinel detected a brute force attack attempt on a Linux system with IP address 61.177.172.160. This IP address has been involved in several incidents, triggering multiple alerts.
 
 **Impact Assessment**
 
@@ -92,11 +91,11 @@ The account targeted by the brute force attack was local to the Linux machine.
 2. Restore the infected workstation to a known clean state.
 3. Conduct a thorough review of logs and security measures to prevent similar incidents.
 
-## Incident ID: 6 - Malware Detected
+## Incident ID: 9 - Malware Detected
 
 **Incident Summary**
 
-On May 15, 2023, at 18:05:12 UTC, Malware has been detected on a workstation, potentially compromising the confidentiality, integrity, availability of the system and data.
+On January 5, 2024, at 18:05:12 UTC, Malware was detected on workstation “windows-vm01”, potentially compromising the confidentiality, integrity, availability of the system and data.
 
 **Initial Response Actions**
 
